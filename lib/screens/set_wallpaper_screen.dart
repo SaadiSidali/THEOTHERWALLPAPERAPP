@@ -16,6 +16,7 @@ import 'package:esys_flutter_share/esys_flutter_share.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:wallpaper/wallpaper.dart';
 
+
 class SetWallpaperScreen extends StatefulWidget {
   static String routeName = '/wallpaper-screen';
 
@@ -28,6 +29,8 @@ class _SetWallpaperScreenState extends State<SetWallpaperScreen> with TickerProv
   Animation<double> _bottomPartOpacity;
   Animation<double> _topPartOpacity;
   bool fade = true;
+
+
 
   void animate() {
     if (fade) {

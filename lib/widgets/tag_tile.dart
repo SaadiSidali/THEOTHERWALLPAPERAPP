@@ -23,7 +23,7 @@ class TagTile extends StatelessWidget {
               borderRadius: BorderRadius.circular(15),
             ),
             child: Text(
-              '#$text',
+              '$text',
               style: TextStyle(color: textColor, fontSize: 16),
             ),
           ),

@@ -4,6 +4,7 @@ import 'package:outline_material_icons/outline_material_icons.dart';
 import './home_page.dart';
 import './categories_screen.dart';
 import './settings_screen.dart';
+import '../widgets/my_drawer.dart';
 
 class TabsScreen extends StatefulWidget {
   @override
@@ -35,7 +36,14 @@ class _TabsScreenState extends State<TabsScreen> with TickerProviderStateMixin {
     return Scaffold(
         // bottomNavigationBar: BottomAppBar(),
         // backgroundColor: Colors.redAccent,
+        
+        drawer: MyDrawer(),
         appBar: AppBar(
+          actions: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: IconButton(icon: Icon(Icons.add_photo_alternate),onPressed: (){},),)
+          ],
           bottom: TabBar(
             controller: _tabController,
             // dragStartBehavior: DragStartBehavior.down,
